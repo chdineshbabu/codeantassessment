@@ -5,7 +5,7 @@ import Substact from "../asserts/Subtract.png";
 import Logo from "../asserts/logo.png";
 import { LoginPage } from "@/components/loginPage";
 import Chart from '../asserts/chart.png';
-import { ArrowUp, ArrowUpNarrowWide } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
 export default function Page() {
   return (
