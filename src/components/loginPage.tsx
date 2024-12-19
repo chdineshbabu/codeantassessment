@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Logo from "../asserts/logo.png";
 import Azure from "../asserts/Azure.png";
 import Bitbucket from "../asserts/bitbucket.png";
@@ -13,7 +13,7 @@ import Key from "../asserts/sso.png";
 
 interface LoginOption {
   name: string;
-  icon: string;
+  icon: StaticImageData;
   onClick: () => void;
 }
 
@@ -64,7 +64,7 @@ export function LoginPage() {
               className="w-full flex items-center px-4 py-2 border rounded hover:bg-gray-100"
               onClick={option.onClick}
             >
-              <Image src={option.icon} alt={option.icon} width={20} height={20} className="w-5 h-5 mr-2" />
+              <Image src={option.icon} alt="img" width={20} height={20} className="w-5 h-5 mr-2" />
               {option.name}
             </button>
           ))}
